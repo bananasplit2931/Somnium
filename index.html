@@ -33,6 +33,10 @@
             --cgf-green-hover: #2d7d46;
         }
 
+        html {
+            font-size: 18px;
+        }
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -43,7 +47,7 @@
             font-family: 'Solitus', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg-dark);
             color: var(--text-main);
-            line-height: 1.6;
+            line-height: 1.75;
             padding: 2rem 1rem;
         }
 
@@ -84,7 +88,7 @@
             border: 1px solid var(--panel-border);
             padding: 10px 16px;
             border-radius: 6px;
-            font-size: 0.95rem;
+            font-size: 1.15rem;
             cursor: pointer;
             outline: none;
             transition: border-color 0.2s, box-shadow 0.2s;
@@ -105,10 +109,11 @@
 
         h1, h2, h3 {
             font-family: 'Bobcat', sans-serif;
+            text-transform: uppercase;
         }
 
         h1 {
-            font-size: 2.8rem;
+            font-size: 3.6rem;
             font-weight: 800;
             margin-bottom: 0.5rem;
             letter-spacing: -0.02em;
@@ -119,7 +124,7 @@
 
         .lead-text {
             color: var(--text-muted);
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             margin-bottom: 2.5rem;
             border-left: 3px solid var(--accent-purple);
             padding-left: 1rem;
@@ -130,7 +135,7 @@
         }
 
         .rules-section h2 {
-            font-size: 1.8rem;
+            font-size: 2.2rem;
             text-transform: uppercase;
             letter-spacing: 0.05em;
             color: var(--text-muted);
@@ -152,7 +157,7 @@
         }
 
         .rule-card h3 {
-            font-size: 1.45rem;
+            font-size: 1.8rem;
             color: #fff;
             margin-bottom: 0.5rem;
             display: flex;
@@ -161,7 +166,7 @@
 
         .rule-card p {
             color: #c4bed4;
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
 
         .rule-card strong {
@@ -183,10 +188,10 @@
             background-color: var(--discord-blue);
             color: #fff;
             text-decoration: none;
-            padding: 12px 24px;
+            padding: 14px 28px;
             border-radius: 8px;
             font-weight: 600;
-            font-size: 0.95rem;
+            font-size: 1.15rem;
             transition: background-color 0.2s, transform 0.1s;
             border: none;
             cursor: pointer;
@@ -205,10 +210,10 @@
             background-color: var(--cgf-green);
             color: #fff;
             text-decoration: none;
-            padding: 12px 24px;
+            padding: 14px 28px;
             border-radius: 8px;
             font-weight: 600;
-            font-size: 0.95rem;
+            font-size: 1.15rem;
             transition: background-color 0.2s, transform 0.1s;
             border: none;
             cursor: pointer;
@@ -232,13 +237,13 @@
 
         footer h3 {
             color: #fff;
-            font-size: 1.5rem;
+            font-size: 1.9rem;
             margin-bottom: 0.5rem;
         }
 
         footer p {
             color: var(--text-muted);
-            font-size: 0.95rem;
+            font-size: 1.15rem;
         }
 
         @media (max-width: 600px) {
@@ -266,7 +271,7 @@
         <header>
             <div class="logo-container">
                 <img src="logosomnium3.png" alt="Somnium Logo" onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='block';">
-                <div id="logo-fallback" style="display:none; padding: 2rem 1rem; font-weight: bold; font-size: 1.5rem; color: var(--accent-purple); letter-spacing: 2px;">SOMNIUM</div>
+                <div id="logo-fallback" style="display:none; padding: 2rem 1rem; font-weight: bold; font-size: 1.9rem; color: var(--accent-purple); letter-spacing: 2px;">SOMNIUM</div>
             </div>
             
             <div class="lang-control">
