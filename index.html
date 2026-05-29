@@ -15,6 +15,8 @@
             --accent-glow: rgba(112, 69, 255, 0.3);
             --discord-blue: #5865F2;
             --discord-hover: #4752C4;
+            --cgf-green: #3ba55c;
+            --cgf-green-hover: #2d7d46;
         }
 
         * {
@@ -151,6 +153,13 @@
             border-radius: 4px;
         }
 
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+
         .discord-btn {
             display: inline-block;
             background-color: var(--discord-blue);
@@ -160,7 +169,6 @@
             border-radius: 8px;
             font-weight: 600;
             font-size: 0.95rem;
-            margin-top: 1rem;
             transition: background-color 0.2s, transform 0.1s;
             border: none;
             cursor: pointer;
@@ -171,6 +179,28 @@
         }
 
         .discord-btn:active {
+            transform: scale(0.98);
+        }
+
+        .cgf-btn {
+            display: inline-block;
+            background-color: var(--cgf-green);
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: background-color 0.2s, transform 0.1s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cgf-btn:hover {
+            background-color: var(--cgf-green-hover);
+        }
+
+        .cgf-btn:active {
             transform: scale(0.98);
         }
 
@@ -202,6 +232,12 @@
             }
             h1 {
                 font-size: 1.8rem;
+            }
+            .btn-group {
+                flex-direction: column;
+            }
+            .discord-btn, .cgf-btn {
+                text-align: center;
             }
         }
     </style>
@@ -245,7 +281,10 @@
                 <div class="rule-card">
                     <h3 data-key="rule2_title">2. How to Submit</h3>
                     <p data-key="rule2_desc">Anyone who wants to participate must post their creation in our specific Discord channel. You MUST add the hashtag <strong>#Somnium</strong> (or other clear indicators, though the hashtag is preferred) to your message. This tells us the fish belongs to the project and gives us permission to use it.</p>
-                    <a href="https://discord.com/channels/992067540752810014/992074760039174165" target="_blank" class="discord-btn" data-key="discord_btn">Join the Discord Channel</a>
+                    <div class="btn-group">
+                        <a href="https://discord.com/channels/992067540752810014/992074760039174165" target="_blank" class="discord-btn" data-key="discord_btn">Join the Discord Channel</a>
+                        <a href="https://discord.gg/7YWYQSXn9k" target="_blank" class="cgf-btn" data-key="cgf_btn">Cat Goes Fishing Server</a>
+                    </div>
                 </div>
 
                 <div class="rule-card">
@@ -272,6 +311,7 @@
                 rule2_title: "2. How to Submit",
                 rule2_desc: "Anyone who wants to participate must post their creation in our specific Discord channel. You MUST add the hashtag <strong>#Somnium</strong> (or other clear indicators, though the hashtag is preferred) to your message. This tells us the fish belongs to the project and gives us permission to use it.",
                 discord_btn: "Join the Discord Channel",
+                cgf_btn: "Cat Goes Fishing Server",
                 rule3_title: "3. Acceptance & Limitations",
                 rule3_desc: "There is never a 100% guarantee that a specific fish will make it into the mod. We will create a 'rejected fish' channel on our server with detailed reasons for any rejections. Submissions with extremely heavy features or things beyond our coding capabilities might be rejected, though we will always try to collaborate with other creators to make it work first.",
                 credits_title: "Everyone is a Creator",
@@ -286,6 +326,7 @@
                 rule2_title: "2. Jak Wziąć Udział",
                 rule2_desc: "Każdy, kto chce wziąć udział, musi opublikować swoją pracę na naszym specjalnym kanale Discord. MUSISZ dodać do wiadomości hashtag <strong>#Somnium</strong> (inne jasne oznaczenia też są okej, ale preferujemy ten hashtag). Dzięki temu wiemy, że ryba należy do projektu i mamy prawo z niej korzystać.",
                 discord_btn: "Dołącz do Kanału Discord",
+                cgf_btn: "Serwer Cat Goes Fishing",
                 rule3_title: "3. Akceptacja i Ograniczenia",
                 rule3_desc: "Nigdy nie ma 100% pewności, że dana ryba trafi do moda. Na naszym serwerze powstanie kanał 'odrzucone ryby', gdzie podamy dokładne powody odrzucenia. Prace wymagające skomplikowanego kodowania lub wykraczające poza nasze umiejętności mogą zostać odrzucone, ale najpierw postaramy się to rozwiązać z pomocą innych twórców.",
                 credits_title: "Każdy Jest Twórcą",
@@ -300,6 +341,7 @@
                 rule2_title: "2. Nasıl Katılabilirsiniz",
                 rule2_desc: "Katılmak isteyen herkes çalışmasını ilgili Discord kanalımızda paylaşmalıdır. Mesajınıza <strong>#Somnium</strong> etiketini (veya diğer net belirtgeleri, ancak etiket tercih edilir) eklemeniz ZORUNLUDUR. Bu bize balığın projeye ait olduğunu belirtir ve kullanmamız için izin verir.",
                 discord_btn: "Discord Kanalına Katıl",
+                cgf_btn: "Cat Goes Fishing Sunucusu",
                 rule3_title: "3. Kabul Edilme ve Sınırlamalar",
                 rule3_desc: "Belirli bir balığın moda ekleneceğinin hiçbir zaman %100 garantisi yoktur. Sunucumuzda, reddedilen her balığın ayrıntılı nedenlerinin yer alacağı bir 'reddedilen balıklar' kanalı oluşturacağız. Çok ağır özelliklere sahip veya kodlama yeteneklerimizin ötesindeki başvurular reddedilebilir, ancak bunu çözmek için her zaman önce diğer içerik oluşturucularla iş birliği yapmaya çalışacağız.",
                 credits_title: "Herkes Bir Yapımcıdır",
@@ -314,6 +356,7 @@
                 rule2_title: "2. Wie man teilnimmt",
                 rule2_desc: "Jeder, der mitmachen möchte, muss seine Kreation in unserem speziellen Discord-Kanal posten. Du MUSST den Hashtag <strong>#Somnium</strong> (oder andere klare Kennzeichnungen) hinzufügen. So wissen wir, dass der Fisch zum Projekt gehört und wir ihn verwenden dürfen.",
                 discord_btn: "Dem Discord-Kanal beitreten",
+                cgf_btn: "Cat Goes Fishing Server",
                 rule3_title: "3. Annahme & Einschränkungen",
                 rule3_desc: "Es gibt nie eine 100%ige Garantie, dass ein bestimmter Fisch in den Mod aufgenommen wird. Wir werden einen 'Abgelehnte Fische'-Kanal auf unserem Server einrichten, mit genauen Gründen für die Ablehnung. Zu komplexe Features oder Dinge, die unsere Programmierfähigkeiten übersteigen, könnten abgelehnt werden, aber wir versuchen immer zuerst, gemeinsam mit anderen Erstellern eine Lösung zu finden.",
                 credits_title: "Jeder ist ein Schöpfer",
@@ -328,6 +371,7 @@
                 rule2_title: "2. Cómo Participar",
                 rule2_desc: "Cualquiera que quiera participar debe publicar su creación en nuestro canal específico de Discord. DEBES añadir el hashtag <strong>#Somnium</strong> (u otros indicadores claros) a tu mensaje. Esto nos indica que el pez pertenece al proyecto y nos da permiso para usarlo.",
                 discord_btn: "Unirse al Canal de Discord",
+                cgf_btn: "Servidor Cat Goes Fishing",
                 rule3_title: "3. Aceptación y Limitaciones",
                 rule3_desc: "Nunca hay una garantía del 100% de que un pez específico entre en el mod. Crearemos un canal de 'peces rechazados' en nuestro servidor con las razones detalladas de cualquier rechazo. Las ideas demasiado complejas o que superen nuestras capacidades de programación podrían ser rechazadas, aunque primero intentaremos colaborar con otros creadores.",
                 credits_title: "Todos son Creadores",
@@ -342,8 +386,9 @@
                 rule2_title: "2. Como Enviar",
                 rule2_desc: "Qualquer pessoa que queira participar deve postar sua criação em nosso canal específico do Discord. Você DEVE adicionar a hashtag <strong>#Somnium</strong> (ou outro indicador claro) à sua mensagem. Isso nos diz que o peixe pertence ao projeto e nos dá permissão para usá-lo.",
                 discord_btn: "Entrar no Canal do Discord",
+                cgf_btn: "Servidor Cat Goes Fishing",
                 rule3_title: "3. Aceitação e Limitações",
-                rule3_desc: "Nunca há 100% de garantia de que um peixe específico entrará no mod. Teremos um canal de 'peces rejeitados' em nosso servidor com os motivos exatos das rejeições. Recursos muito pesados ou coisas além de nossas habilidades de programação podem ser rejeitados, mas sempre tentaremos resolver isso com outros criadores primeiro.",
+                rule3_desc: "Nunca há 100% de garantia de que um peixe específico entrará no mod. Teremos um canal de 'peixes rejeitados' em nosso servidor com os motivos exatos das rejeições. Recursos muito pesados ou coisas além de nossas habilidades de programação podem ser rejeitados, mas sempre tentaremos resolver isso com outros criadores primeiro.",
                 credits_title: "Todo Mundo é um Criador",
                 credits_desc: "Todos que participarem receberão os devidos créditos neste site e no jogo. Queremos deixar claro que este não é apenas o 'nosso' mod, cada participante o está construindo conosco até que o projeto seja concluído ou descontinuado. Obrigado por sonhar conosco!"
             },
@@ -356,6 +401,7 @@
                 rule2_title: "2. Как отправить работу",
                 rule2_desc: "Каждый, кто хочет принять участие, должен опубликовать свою работу в нашем специальном канале Discord. В сообщении ОБЯЗАТЕЛЬНО нужно добавить хештег <strong>#Somnium</strong> (или другие понятные метки). Это даст нам знать, что рыба принадлежит проекту, и мы имеем право её использовать.",
                 discord_btn: "Присоединиться к Discord-каналу",
+                cgf_btn: "Сервер Cat Goes Fishing",
                 rule3_title: "3. Принятие и ограничения",
                 rule3_desc: "Никогда нет 100% гарантии, что конкретная рыба попадет в мод. На нашем сервере будет канал 'отклоненные рыбы' с подробным описанием причин отказа. Слишком сложные механики или вещи, выходящие за рамки наших навыков программирования, могут быть отклонены, но мы сначала постараемся реализовать их с помощью других авторов.",
                 credits_title: "Каждый — творец",
