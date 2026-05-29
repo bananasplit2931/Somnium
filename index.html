@@ -12,6 +12,13 @@
             font-style: normal;
         }
 
+        @font-face {
+            font-family: 'Solitus';
+            src: url('Solitus.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         :root {
             --bg-dark: #09070f;
             --panel-bg: #13111c;
@@ -33,7 +40,7 @@
         }
 
         body {
-            font-family: 'Bobcat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Solitus', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg-dark);
             color: var(--text-main);
             line-height: 1.6;
@@ -96,8 +103,12 @@
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
         }
 
+        h1, h2, h3 {
+            font-family: 'Bobcat', sans-serif;
+        }
+
         h1 {
-            font-size: 2.2rem;
+            font-size: 2.8rem;
             font-weight: 800;
             margin-bottom: 0.5rem;
             letter-spacing: -0.02em;
@@ -119,7 +130,7 @@
         }
 
         .rules-section h2 {
-            font-size: 1.4rem;
+            font-size: 1.8rem;
             text-transform: uppercase;
             letter-spacing: 0.05em;
             color: var(--text-muted);
@@ -141,7 +152,7 @@
         }
 
         .rule-card h3 {
-            font-size: 1.15rem;
+            font-size: 1.45rem;
             color: #fff;
             margin-bottom: 0.5rem;
             display: flex;
@@ -221,7 +232,7 @@
 
         footer h3 {
             color: #fff;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             margin-bottom: 0.5rem;
         }
 
@@ -238,7 +249,7 @@
                 padding: 1rem 0.5rem;
             }
             h1 {
-                font-size: 1.8rem;
+                font-size: 2.2rem;
             }
             .btn-group {
                 flex-direction: column;
